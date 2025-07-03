@@ -3,7 +3,7 @@ name: Run Cloud ETL
 on:
   workflow_dispatch:  # Manual trigger
   schedule:
-    - cron: '5 * * * *'  # Every day at 5:00 AM IST (11:30 PM UTC)
+    - cron: '*/5 * * * *'  # Every day at 5:00 AM IST (11:30 PM UTC)
 
 jobs:
   run-etl:
